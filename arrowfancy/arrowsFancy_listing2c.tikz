@@ -1,0 +1,18 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none, matrix, matrix of nodes] (1) at (0, 0) {        
+       \begin{minipage}{0.9\textwidth} 
+       \begin{lstlisting}[title={\footnotesize{arrowfancy/arrowsFancy2a.tikzstyles} },captionpos=b]
+% Node styles
+
+% Edge styles
+\tikzstyle{ParenPattern1 arrow}=[<->, >=ParentPattern1, shorten >=-0.25pt, draw=black, line width=0.75pt]
+\tikzstyle{ParenPattern2 arrow}=[<->, >=ParentPattern2, shorten <=-0.25pt, line width=0.75pt, draw=black]
+\tikzstyle{ParenPattern3 arrow}=[<->, >=ParentPattern3, shorten <=-0.25pt, gray]
+\tikzstyle{ParenPattern4 arrow}=[<->, >=ParentPattern4, shorten <=-0.35pt, gray]
+        \end{lstlisting} 
+        \end{minipage}          
+        \\
+        };
+	\end{pgfonlayer}
+\end{tikzpicture}

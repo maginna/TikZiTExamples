@@ -1,0 +1,24 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-3, 0) {};
+		\node [style=none] (1) at (3, 0) {};
+		\node [style=annotationNode] (2) at (-3, 2) {tail};
+		\node [style=annotationNode] (3) at (3, 2) {tip};
+		\node [style=annotationNode] (4) at (-3, -2) {tail};
+		\node [style=annotationNode] (5) at (3, -2) {tip};
+		\node [style=none] (6) at (-3, -4) {};
+		\node [style=none] (7) at (3, -4) {};
+		\node [style=annotationNode] (8) at (-3, -6) {tail};
+		\node [style=annotationNode] (9) at (3, -6) {tip};
+		\node [style=none] (10) at (-3, -8) {};
+		\node [style=none] (11) at (3, -8) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=annotationArrow] (0.center) to (1.center);
+		\draw [style=annotationArrow] (2) to (3);
+		\draw [style=kite arrow] (4) to (5);
+		\draw [style=kite arrow] (6.center) to (7.center);
+		\draw [style=ArrowRnd3] (8) to (9);
+		\draw [style=ArrowRnd3] (10.center) to (11.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

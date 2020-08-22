@@ -1,0 +1,24 @@
+%\usepackage{xcolor}
+
+%\usetikzlibrary{decorations,decorations.pathmorphing,positioning,fit,matrix,decorations.markings,decorations.pathreplacing, decorations.shapes, arrows.meta}
+\usetikzlibrary{arrows.meta}
+
+\tikzset{
+ParentPattern1/.tip = {Computer Modern Rightarrow[left,reversed]
+}
+}
+\tikzset{
+ParentPattern2/.tip = {Computer Modern Rightarrow[right,reversed]
+}
+}
+\tikzset{
+ParentPattern3/.tip = {Straight Barb[left, reversed]
+}
+}
+\tikzset{
+ParentPattern4/.tip = {Straight Barb[right,reversed]
+}
+}
+
+\tikzstyle{tikzfig}=[baseline=-0.25em,scale=0.5]
+

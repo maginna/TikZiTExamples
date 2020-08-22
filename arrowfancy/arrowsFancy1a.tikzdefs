@@ -1,0 +1,44 @@
+\usepackage{xcolor}
+\usepackage{tikz-imagelabels}
+
+%\usetikzlibrary{decorations,decorations.pathmorphing,positioning,fit,matrix,decorations.markings,decorations.pathreplacing, decorations.shapes, calc,math,arrows.meta}
+
+% \imagelabelset content and idea for dual circle arrow tip are from tikz-imagelabels copyright 2019 Tobias Plüss, 
+% see https://ctan.org/pkg/tikz-imagelabels?lang=en
+\imagelabelset{
+coarse grid color = red,
+fine grid color = gray,
+image label font = \sffamily\bfseries\small,
+image label distance = 2mm,
+image label back = black,
+image label text = white,
+coordinate label font = \sffamily\bfseries\scriptsize,
+coordinate label distance = 2mm, 
+coordinate label back = black, 
+coordinate label text = white, 
+annotation font = \normalfont\small, 
+arrow distance = 1.5mm,
+border thickness = 0.6pt, 
+arrow thickness = 0.4pt, 
+tip size = 1.2mm,
+outer dist = 0.5cm,
+}
+
+\tikzset{
+OuTipCirc/.tip = {Circle[length=\tipsize+2*\borderthickness,
+		width=\tipsize+2*\borderthickness]}
+}
+
+\tikzset{
+InTipCirc/.tip = {Circle[length=\tipsize,
+		width=\tipsize]}
+}
+
+
+
+\tikzset{
+TipRnd3/.tip = {Round Cap[]. Fast Round[] Fast Round[]}
+}
+	 
+\tikzstyle{tikzfig}=[baseline=-0.25em,scale=0.5]
+

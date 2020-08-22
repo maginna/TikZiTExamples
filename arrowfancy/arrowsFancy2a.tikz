@@ -1,0 +1,27 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-6, 1) {};
+		\node [style=none] (1) at (0, 1) {};
+		\node [style=none] (2) at (6, 1) {};
+		\node [style=none] (3) at (-6, 0) {};
+		\node [style=none] (4) at (0, 0) {};
+		\node [style=none] (5) at (6, 0) {};
+		\node [style=none] (6) at (-6, -2) {};
+		\node [style=none] (7) at (0, -2) {};
+		\node [style=none] (8) at (6, -2) {};
+		\node [style=none] (9) at (-6, -3) {};
+		\node [style=none] (10) at (0, -3) {};
+		\node [style=none] (11) at (6, -3) {};
+		\node [style=none, rotate=90] (12) at (0, -1) { \Bigg{\{}};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=ParenPattern1 arrow] (0.center) to (1.center);
+		\draw [style=ParenPattern2 arrow] (1.center) to (2.center);
+		\draw [style=ParenPattern2 arrow] (4.center) to (3.center);
+		\draw [style=ParenPattern1 arrow] (5.center) to (4.center);
+		\draw [style=ParenPattern3 arrow] (7.center) to (6.center);
+		\draw [style=ParenPattern4 arrow] (7.center) to (8.center);
+		\draw [style=ParenPattern4 arrow] (10.center) to (9.center);
+		\draw [style=ParenPattern3 arrow] (10.center) to (11.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

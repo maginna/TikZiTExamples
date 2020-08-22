@@ -1,0 +1,22 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none, matrix, matrix of nodes] (1) at (0, 0) {        
+       \begin{minipage}{0.9\textwidth} 
+       \begin{lstlisting}[title={\footnotesize{arrowfancy/arrowsFancy1a.tikzstyles} },captionpos=b]
+% Node styles
+\tikzstyle{annotationNode}=[inner sep=0.5ex, font={\annotationfont}]
+\tikzstyle{marker}=[draw=black, shape=circle, inner sep=0pt, minimum size=2pt, fill=black]
+% Edge styles
+\tikzstyle{annotationArrow}=[-, preaction=OuCircArrow, InCircArrow]
+\tikzstyle{InCircArrow}=[-, -InTipCirc, line width={ \arrowthickness}, shorten >={\borderthickness +\arrowdistance}, draw=yellow]
+\tikzstyle{OuCircArrow}=[-, -OuTipCirc, line width={2*\borderthickness + \arrowthickness}, shorten >={\arrowdistance}, draw=red]
+\tikzstyle{kite arrow}=[-, preaction=OuKiteArrow, InKiteArrow]
+\tikzstyle{InKiteArrow}=[->, >={Kite[length=1.7*\tipsize,width=0.9*\tipsize,inset=0.3pt,fill=red]}, line width={ \arrowthickness}, shorten >={\borderthickness +1.13*\arrowdistance}, draw=yellow]
+\tikzstyle{OuKiteArrow}=[->, >={Kite[length=2*\tipsize+2*\borderthickness,width=\tipsize+2*\borderthickness,inset=0.6pt]}, line width={2*\borderthickness + \arrowthickness}, shorten >={0.9*\arrowdistance}, draw=red]
+\tikzstyle{ArrowRnd3}=[-, -TipRnd3, line width={\tipsize}, draw=red, shorten >={\arrowdistance}]
+        \end{lstlisting} 
+        \end{minipage}          
+        \\
+        };
+	\end{pgfonlayer}
+\end{tikzpicture}
