@@ -1,0 +1,15 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none, matrix, matrix of nodes] (1) at (0, 0) {        
+       \begin{minipage}{0.9\textwidth} 
+       \begin{lstlisting}[title={\footnotesize{petriNet2/petri\_net2a.tikzdefs} },captionpos=b]
+\usetikzlibrary{decorations.pathmorphing,fit}
+\usetikzlibrary{petri}
+
+\tikzstyle{tikzfig}=[baseline=-0.25em,scale=0.5]   
+        \end{lstlisting} 
+        \end{minipage}          
+        \\
+        };
+	\end{pgfonlayer}
+\end{tikzpicture}

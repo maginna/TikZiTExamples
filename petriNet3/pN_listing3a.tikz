@@ -1,0 +1,20 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none, matrix, matrix of nodes] (1) at (0, 0) {        
+       \begin{minipage}{0.9\textwidth} 
+       \begin{lstlisting}[title={\footnotesize{petriNet3/petri\_net3a.tikz} },captionpos=b]
+\begin{tikzpicture}[show background rectangle, tight background, xscale=2.5, yscale=2.5]
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none, opacity=0.2, minimum size=1.9cm, fill={black!40}, fit={(0) (2) (3)}] (4) at (2, 1) {};
+		\node [style=none, opacity=0.2, fill={black!40}, fit={(5)(6) (8)}] (9) at (-2, 1) {};
+truncated
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+	\end{pgfonlayer}
+\end{tikzpicture}      
+        \end{lstlisting} 
+        \end{minipage}          
+        \\
+        };
+	\end{pgfonlayer}
+\end{tikzpicture}

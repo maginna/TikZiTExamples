@@ -1,0 +1,61 @@
+\begin{tikzpicture}[xscale=2.5, yscale=2.5]
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=aplace, tokens=1] (0) at (2.275, 2) {};
+		\node [style=aplace] (1) at (2.275, 1) {};
+		\node [style=aplace, tokens=1] (2) at (2.275, -2) {};
+		\node [style=atransition] (3) at (3.275, 1) {};
+		\node [style=atransition] (4) at (1.275, 1) {};
+		\node [style=atransition] (5) at (3.275, -1) {};
+		\node [style=atransition] (6) at (1.275, -1) {};
+		\node [style=RedPlace, label={180:$s$}] (7) at (1.775, 0) {};
+		\node [style=aplace] (9) at (2.275, -1) {};
+		\node [style=RedPlace, tokens=3, label={0:$\bar{s}$}] (10) at (2.775, 0) {};
+		\node [style=aplace] (11) at (-2.275, 2) {};
+		\node [style=aplace] (12) at (-2.275, 1) {};
+		\node [style=aplace, label={above:$s\le3$}] (13) at (-2.275, 0) {};
+		\node [style=aplace] (14) at (-2.275, -1) {};
+		\node [style=aplace] (15) at (-2.275, -2) {};
+		\node [style=atransition] (16) at (-3.275, 1) {};
+		\node [style=atransition] (17) at (-1.275, 1) {};
+		\node [style=atransition] (18) at (-1.275, -1) {};
+		\node [style=atransition] (19) at (-3.275, -1) {};
+		\node [style=none] (20) at (-1.025, 0) {};
+		\node [style=none] (21) at (1.025, 0) {};
+		\node [style=none, opacity=0.2, fill={black!30}, fit={(0)(2)(3)(4)}] (22) at (2.275, 0) {};
+		\node [style=none, opacity=0.2, fill={black!30}, fit={(11)(15)(16)(17)}] (23) at (-2.275, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=StealthArrow] (4) to (1);
+		\draw [style=StealthArrow, bend right=45] (0) to (4);
+		\draw [style=StealthArrow, bend right=45] (3) to node [auto, swap] {2} (0);
+		\draw [style=StealthArrow] (1) to (3);
+		\draw [style=StealthArrow, bend left=45] (2) to (6);
+		\draw [style=StealthArrow, bend left=45] (5) to node [auto] {2} (2);
+		\draw [style=StealthArrow] (6) to (7);
+		\draw [style=StealthArrow] (4) to (7);
+		\draw [style=StealthArrow] (7) to (3);
+		\draw [style=StealthArrow] (6) to (9);
+		\draw [style=StealthArrow] (9) to (5);
+		\draw [style=StealthArrow] (7) to (5);
+		\draw [style=StealthArrow] (3) to (10);
+		\draw [style=StealthArrow] (10) to (4);
+		\draw [style=StealthArrow] (5) to (10);
+		\draw [style=StealthArrow] (10) to (6);
+		\draw [style=StealthArrow, bend right=45] (11) to (16);
+		\draw [style=StealthArrow] (16) to (12);
+		\draw [style=StealthArrow, bend right=45] (17) to node [auto, swap] {2} (11);
+		\draw [style=StealthArrow, bend right=45] (13) to (17);
+		\draw [style=StealthArrow, bend right=45] (16) to (13);
+		\draw [style=StealthArrow, bend left=45] (19) to (13);
+		\draw [style=StealthArrow, bend left=45] (13) to (18);
+		\draw [style=StealthArrow, bend left=45] (18) to node [auto] {2} (15);
+		\draw [style=StealthArrow, bend right=315] (15) to (19);
+		\draw [style=StealthArrow] (12) to (17);
+		\draw [style=StealthArrow] (19) to (14);
+		\draw [style=StealthArrow] (14) to (18);
+		\draw [style=snakeArrow] (20.center) to node [above, text width=3cm, align=center, midway] {
+			replacement of the \textcolor{red}{capacity} by 
+			\textcolor{red}{two places}
+		} (21.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

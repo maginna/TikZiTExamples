@@ -1,0 +1,7 @@
+\usetikzlibrary{decorations.pathmorphing,positioning,fit}
+\usetikzlibrary{petri}
+
+\tikzset{background rectangle/.style={fill=red!15}}
+
+\tikzstyle{tikzfig}=[baseline=-0.25em,scale=0.5]
+
