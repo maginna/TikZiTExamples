@@ -1,5 +1,0 @@
-\usetikzlibrary{decorations.pathmorphing,fit}
-\usetikzlibrary{petri}
-
-\tikzstyle{tikzfig}=[baseline=-0.25em,scale=0.5]
-
